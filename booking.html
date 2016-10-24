@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<title>Booking Page | Personal Sightseeing</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Short+Stack" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet"/>
+<link href="css/main.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="main_content">
+  <header id="main_header">
+    <div id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="fix_container"> <a href="#" class="mainlogo"><img src="images/logo.png" alt="logo"/></a>
+        <div class="header_menu"> <a href="#" class="btn">Find a guide</a> <a href="#" class="btn">Become a guide</a> </div>
+        <a href="#" class="btn btn-brdr sign_inbtn">SIGN IN</a> </div>
+    </div>
+  </header>
+  <div id="inner_page">
+    <div class="fix_container">
+      <div class="result_header clearfix">
+        <div class="text_count">Enter your tour details and payment information</div>
+      </div>
+      <div class="bookingwrap">
+        <div class="bpage_h">Booking Details</div>
+        <div class="row">
+          <div class="col-sm-6">
+            <label>No. of Travelers</label>
+            <div class="btn-group usertype btn-block" data-toggle="buttons">
+              <label class="btn btn-primary active">
+                <input type="radio" name="nooftraveler" id="t1" autocomplete="off" checked="">
+                1</label>
+              <label class="btn btn-primary">
+                <input type="radio" name="nooftraveler" id="t2" autocomplete="off">
+                2</label>
+              <label class="btn btn-primary">
+                <input type="radio" name="nooftraveler" id="t3" autocomplete="off">
+                3</label>
+              <label class="btn btn-primary">
+                <input type="radio" name="nooftraveler" id="t4" autocomplete="off">
+                4</label>
+              <label class="btn btn-primary">
+                <input type="radio" name="nooftraveler" id="t5" autocomplete="off">
+                5</label>
+              <label class="btn btn-primary">
+                <input type="radio" name="nooftraveler" id="t6" autocomplete="off">
+                &gt;5</label>
+            </div>
+          </div>
+          <div class="col-sm-6">
+          <div class="form-group">
+            <label>Location</label>
+            <select class="locations span5 form-control" id="select-location">
+              <option value="">Select an option</option>
+              <option value="delhi">Delhi</option>
+              <option value="mumbai">Mumbai</option>
+              <option value="agra">Agra</option>
+              <option value="jaipur">Jaipur</option>
+              <option value="shimla">Shimla</option>
+              <option value="manali">Manali</option>
+            </select>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid day_itemwrap">
+           <div class="row">
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label for="tourdate">Tour Date</label>
+                <input type="text" class="form-control" id="tourdate" readonly>
+              </div>
+            </div>
+            
+            <div class="col-sm-3">
+            <label>Pricing Type</label>
+            <div class="btn-group usertype btn-block" data-toggle="buttons">
+              <label class="btn btn-primary active pricetype">
+                <input type="radio" name="pricetype" id="dailyprice" autocomplete="off" checked="">Daily</label>
+              <label class="btn btn-primary pricetype">
+                <input type="radio" name="pricetype" id="hourprice" autocomplete="off">Hourly</label>
+            </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="form-group collapse" id="tourhourwrap">
+                <label for="tourhours">No. of Hours</label>
+                <input type="number" class="form-control" id="tourhours" value="1" min="1" max="11">
+              </div>
+            </div>
+            <div class="col-sm-2">
+            <div class="form-group">
+            	<label>Currency</label>
+                <select class="form-control" id="select-currency" disabled>
+              <option value="usd">USD</option>
+            </select>
+            </div>
+            </div>
+            <div class="col-sm-2 text-right">
+            	<label>Price</label>
+                <div class="sub_price">100</div>
+        </div>
+          </div>
+          <div class="add_day_wrap">
+          <a href="#">[+] Add another day</a>
+          </div>
+        </div>
+        
+        <div class="totalwrap">Total Cost : <span class="t_price">USD 2000/-</span></div>
+        <div class="row">
+        	<div class="col-xs-12">
+            	<div class="form-group">
+                	<label>Extra information for guide</label>
+                    <textarea class="form-control" rows="4"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="bpage_h">Traveler Details</div>
+        <div class="row">
+        	<div class="col-sm-6">
+            	<div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" class="form-control" id="firstname">
+              </div>
+            </div>
+            <div class="col-sm-6">
+            	<div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" class="form-control" id="lastname">
+              </div>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-sm-6">
+            	<div class="form-group">
+                <label for="useremail">Email</label>
+                <input type="text" class="form-control" id="useremail">
+              </div>
+            </div>
+            <div class="col-sm-6">
+            	<div class="form-group">
+                <label for="usermobile">Mobile</label>
+                <input type="text" class="form-control" id="usermobile">
+              </div>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-sm-6">
+        	<div class="form-group">
+            <label>Country</label>
+            <select class="locations span5 form-control" id="select-country">
+              <option value="">Select an option</option>
+              <option value="india">India</option>
+              <option value="uae">UAE</option>
+              <option value="usa">USA</option>
+            </select>
+            </div>
+            </div>
+        </div>
+        <div class="form-group">
+        <div class="checkbox">
+  <label>
+    <input type="checkbox" value="agree_terms">
+   I have read and agree to <a href="#">Terms and Condition</a>
+  </label>
+</div>
+<div class="checkbox">
+  <label>
+    <input type="checkbox" value="availguide">
+    I have checked the availability with guide, <a href="#">Message Guide Now</a>
+  </label>
+</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+    	<a type="submit" class="btn btn-book btn-lg btn-block btn-w200">PAY NOW</a>
+    </div>
+</div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer">
+    <div class="footer_social"> Let's get in touch
+      <div class="social-wrap clearfix"> <a href="#" class="fb pull-left"></a> <a href="#" class="mail pull-left"></a> <a href="#" class="gp pull-left"></a> </div>
+    </div>
+    <div class="footer_main">
+      <div class="footer_lnkwrap"> <a href="#">About Us</a> &nbsp; | &nbsp; <a href="#">Privacy</a> &nbsp; | &nbsp; <a href="#">T&amp;C</a> &nbsp; | &nbsp; <a href="#">How It Works</a> &nbsp; | &nbsp; <a href="#">Faq</a> </div>
+      2016 © Personal sightseeing, Inc. All rights reserved.</div>
+  </footer>
+</div>
+<script src="js/jquery-1.11.0.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<script src="js/calendar.js"></script> 
+<script src="js/custom.js"></script>
+</body>
+</html>
