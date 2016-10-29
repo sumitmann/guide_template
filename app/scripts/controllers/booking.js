@@ -8,7 +8,7 @@
  * Controller of the guideTemplateApp
  */
 angular.module('guideTemplateApp')
-  .controller('AboutCtrl', function () {
+  .controller('BookingCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

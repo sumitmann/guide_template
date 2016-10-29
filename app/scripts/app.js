@@ -26,10 +26,30 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+      .when('/search', {
+        templateUrl: 'views/search.html',
+        controller: 'SearchCtrl',
+        controllerAs: 'search'
+      })
+      .when('/booking', {
+        templateUrl: 'views/booking.html',
+        controller: 'BookingCtrl',
+        controllerAs: 'booking'
+      })
+      .when('/bookingsuccess', {
+        templateUrl: 'views/bookingSuccess.html',
+        controller: 'BookingCtrl',
+        controllerAs: 'booking'
+      })
+      .when('/guidedetails', {
+        templateUrl: 'views/guideDetails.html',
+        controller: 'GuideDetailsCtrl',
+        controllerAs: 'guidedetails'
+      })
+      .when('/guideprofile', {
+        templateUrl: 'views/guideProfile.html',
+        controller: 'GuideProfileCtrl',
+        controllerAs: 'guideprofile'
       })
       .otherwise({
         redirectTo: '/'
