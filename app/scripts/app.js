@@ -12,11 +12,7 @@
 var pssApp = angular
     .module('pssApp', [
         'ngRoute',
-        'ui.bootstrap',
-//        'ngLoadingSpinner',
-//        'datatables',
-//        'am.multiselect',
-        'ui.router',
+		'ui.bootstrap',
 		'ngAnimate',
 		'ngAria',
 		'ngCookies',
