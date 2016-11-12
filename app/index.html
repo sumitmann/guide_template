@@ -16,130 +16,16 @@
   <link rel="stylesheet" href="styles/font.css">
   <!-- endbuild -->
 </head>
-<body ng-app="guideTemplateApp">
+<body ng-app="pssApp">
 <!--[if lte IE 8]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
   your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <!-- Add your site or application content here -->
-<div ng-include="'views/header.html'">
-</div>
+<div ng-include="'views/header.html'"></div>
 <div ng-view=""></div>
-<div class="modal fade" id="singup_modal" tabindex="-1" role="dialog" aria-labelledby="Registation modal">
-  <div class="modal-dialog modal-md" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-          aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="signupLabel">Enter your details to register</h4>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="btn-group usertype" data-toggle="buttons">
-            <label class="btn btn-primary active">
-              <input type="radio" name="user_type" id="signuser" autocomplete="off" checked> Find a Guide
-            </label>
-            <label class="btn btn-primary">
-              <input type="radio" name="user_type" id="signguide" autocomplete="off"> Become a Guide
-            </label>
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label for="firstname" class="control-label">First Name:</label>
-                <input type="text" class="form-control" id="firstname">
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label for="lastname" class="control-label">Last Name:</label>
-                <input type="text" class="form-control" id="lastname">
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label for="mobile" class="control-label">Mobile:</label>
-                <input type="tel" class="form-control" id="mobile">
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label for="regemail" class="control-label">Email Address:</label>
-                <input type="email" class="form-control" id="regemail">
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label for="passwrd" class="control-label">Password:</label>
-                <input type="password" class="form-control" id="passwrd">
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label for="cnfpasswrd" class="control-label">Confirm Password:</label>
-                <input type="password" class="form-control" id="cnfpasswrd">
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-block">REGISTER</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="singin_modal" tabindex="-1" role="dialog" aria-labelledby="Login modal">
-  <div class="modal-dialog modal-sm" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-          aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="signinLabel">Enter your details to login</h4>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="btn-group usertype" data-toggle="buttons">
-            <label class="btn btn-primary active">
-              <input type="radio" name="user_type" id="user" autocomplete="off" checked> Login as User
-            </label>
-            <label class="btn btn-primary">
-              <input type="radio" name="user_type" id="guide" autocomplete="off"> Login as Guide
-            </label>
-          </div>
-          <div class="form-group">
-            <label for="email" class="control-label">Email Address:</label>
-            <input type="text" class="form-control" id="email">
-          </div>
-          <div class="form-group">
-            <label for="password" class="control-label">Password:</label>
-            <input type="password" class="form-control" id="password">
-          </div>
-          <div class="row">
-            <div class="col-xs-6">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" id="remeberme" name="rememberme">
-                  Remember Me </label>
-              </div>
-            </div>
-            <div class="col-xs-6 text-right"><a href="#">Forgot Password</a></div>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-block">SIGN IN</button>
-      </div>
-    </div>
-  </div>
-</div>
 <div ng-include="'views/footer.html'"></div>
-
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
 <script>
@@ -157,6 +43,8 @@
 <!-- build:js(.) scripts/vendor.js -->
 <!-- bower:js -->
 <script src="bower_components/angular/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 <script src="bower_components/angular-animate/angular-animate.js"></script>
 <script src="bower_components/angular-aria/angular-aria.js"></script>
 <script src="bower_components/angular-cookies/angular-cookies.js"></script>
@@ -170,15 +58,19 @@
 
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
 <script src="scripts/app.js"></script>
-<script src="scripts/controllers/main.js"></script>
-<script src="scripts/controllers/search.js"></script>
-<script src="scripts/controllers/booking.js"></script>
-<script src="scripts/controllers/guideDetails.js"></script>
+<script src="scripts/routes.js"></script>
+<script src="scripts/settings.js"></script>
+<script src="scripts/services.js"></script>
+<script src="scripts/mainCtrl.js"></script>
+<script src="scripts/controllers/searchCtrl.js"></script>
+<script src="scripts/controllers/searchSrv.js"></script>
+ <script src="scripts/controllers/guideDetails.js"></script>
+<!--<script src="scripts/controllers/booking.js"></script>
 <script src="scripts/controllers/guideProfile.js"></script>
-
-<script src="scripts/jquery-1.11.0.min.js"></script>
-<script src="scripts/bootstrap.min.js"></script>
-<script src="scripts/custom.js"></script>
+ -->
+<script src="scripts/lib/jquery-1.11.0.min.js"></script>
+<script src="scripts/lib/bootstrap.min.js"></script>
+<script src="scripts/lib/custom.js"></script>
 <!-- endbuild -->
 </body>
 </html>

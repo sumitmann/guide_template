@@ -2,13 +2,12 @@
 
 /**
  * @ngdoc function
- * @name guideTemplateApp.controller:AboutCtrl
+ * @name pssApp.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the guideTemplateApp
+ * Controller of the pssApp
  */
-angular.module('guideTemplateApp')
-  .controller('GuideDetailsCtrl', function () {
+pssApp.controller('GuideDetailsCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

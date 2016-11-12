@@ -7,8 +7,7 @@
  * # AboutCtrl
  * Controller of the guideTemplateApp
  */
-angular.module('guideTemplateApp')
-  .controller('GuideProfileCtrl', function () {
+pssApp.controller('GuideProfileCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
