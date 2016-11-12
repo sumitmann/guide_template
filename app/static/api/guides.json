@@ -1,0 +1,124 @@
+{  
+   "message":"success",
+   "status":200,
+   "data":[  
+      {  
+         "photo":"images/guide.jpg",
+         "isNewListed":false,
+         "noOfBookings":3,
+         "firstName":"Vijay",
+         "lastName":"Surya",
+         "experience":3,
+         "cityPrimary":"Hubli(Primary)",
+         "citySecondary":"Bangalore",
+         "primaryLanguage":"Kannada (Fluent)",
+         "secondaryLanguages":[  
+            {  
+               "language":"Telugu",
+               "fluency":"Fluent"
+            },
+            {  
+               "language":"Marathi",
+               "fluency":"Fluent"
+            }
+         ],
+         "smoking":"No",
+         "customerPreference":[  
+            {  
+               "text":"Man Alone",
+               "isActive":""
+            },
+            {  
+               "text":"Woman Alone",
+               "isActive":"active"
+            },
+            {  
+               "text":"Group",
+               "isActive":""
+            }
+         ],
+         "aboutGuide":"My name is Vijay Surya a professional licensed tourist guide based in The City of Taj Mahal “Agra”. My passion to be guide started since i was a child. I used to.",
+         "pricing":"USD 100/hour"
+      },
+      {  
+         "photo":"images/guide.jpg",
+         "isNewListed":true,
+         "noOfBookings":0,
+         "firstName":"Jacky",
+         "lastName":"Dada",
+         "experience":4,
+         "cityPrimary":"Bengaluru(Primary)",
+         "citySecondary":"Mysore",
+         "primaryLanguage":"Kannada (Fluent)",
+         "secondaryLanguages":[  
+            {  
+               "language":"Tamil",
+               "fluency":"Basic"
+            },
+            {  
+               "language":"Marathi",
+               "fluency":"Basic"
+            },
+            {  
+               "language":"French",
+               "fluency":"Basic"
+            }
+         ],
+         "smoking":"Yes",
+         "customerPreference":[  
+            {  
+               "text":"Man Alone",
+               "isActive":"active"
+            },
+            {  
+               "text":"Woman Alone",
+               "isActive":"active"
+            },
+            {  
+               "text":"Group",
+               "isActive":"active"
+            }
+         ],
+         "aboutGuide":"My name is Jacky Dada and I am a professional licensed tourist guide based in The City of Taj Mahal “Agra”. My passion to be guide started since i was a child. I used to.",
+         "pricing":"USD 200/day"
+      },
+      {  
+         "photo":"images/guide.jpg",
+         "isNewListed":false,
+         "noOfBookings":4,
+         "firstName":"Ajay",
+         "lastName":"Kamath",
+         "experience":7,
+         "cityPrimary":"Bengaluru(Primary)",
+         "citySecondary":"Mysore",
+         "primaryLanguage":"Kannada (Fluent)",
+         "secondaryLanguages":[  
+            {  
+               "language":"Tamil",
+               "fluency":"Basic"
+            },
+            {  
+               "language":"Marathi",
+               "fluency":"Basic"
+            }
+         ],
+         "smoking":"No",
+         "customerPreference":[  
+            {  
+               "text":"Man Alone",
+               "isActive":"active"
+            },
+            {  
+               "text":"Woman Alone",
+               "isActive":"active"
+            },
+            {  
+               "text":"Group",
+               "isActive":""
+            }
+         ],
+         "aboutGuide":"My name is Ajay Kamath and I am a professional licensed tourist guide based in The City of Taj Mahal “Agra”. My passion to be guide started since i was a child. I used to.",
+         "pricing":"USD 1000/day"
+      }
+   ]
+}

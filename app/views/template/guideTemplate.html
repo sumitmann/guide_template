@@ -1,0 +1,65 @@
+	<div class="gimg_wrap">
+	  <div class="guide_card_imgwrap premium">
+		<img src="{{guideDetails.photo}}" alt="guide img">
+	  </div>
+	  <div class="star_ratingwrap">
+		<div class="star"></div>
+		<div class="star"></div>
+		<div class="star"></div>
+		<div class="star"></div>
+		<div class="star"></div>
+	  </div>
+	  <div class="grating_txt">No Reviews</div>
+
+	  <div class="star_ratingwrap norating" ng-show="{{guideDetails.isNewListed}}">Newly Listed
+	  </div>
+	  <div class="grating_txt">No bookings yet</div>
+	</div>
+	<div class="row g_descbox">
+	  <div class="col-sm-9">
+		<a href="#" class="g_name">{{guideDetails.firstName}} {{guideDetails.lastName}}</a>
+		<div class="row g_descitem">
+		  <div class="col col-sm-4 col-md-3">Experience <span class="visible-xs">:</span></div>
+		  <div class="col col-sm-1 hidden-xs">:</div>
+		  <div class="col-sm-7">{{guideDetails.experience}} year(s)</div>
+		</div>
+		<div class="row g_descitem">
+		  <div class="col col-sm-4 col-md-3">Location(s) <span class="visible-xs">:</span></div>
+		  <div class="col col-sm-1 hidden-xs">:</div>
+		  <div class="col-sm-7"><strong>{{guideDetails.cityPrimary}}</strong>, {{guideDetails.citySecondary}}</div>
+		</div>
+		<div class="row g_descitem">
+		  <div class="col col-sm-4 col-md-3">Language(s) <span class="visible-xs">:</span></div>
+		  <div class="col col-sm-1 hidden-xs">:</div>
+		  <div class="col-sm-7"><strong>{{guideDetails.primaryLanguage}}</strong>, secondary Lanagues
+		  </div>
+		</div>
+		<div class="row g_descitem">
+		  <div class="col col-sm-4 col-md-3">Smoking <span class="visible-xs">:</span></div>
+		  <div class="col col-sm-1 hidden-xs">:</div>
+		  <div class="col-sm-7">{{guideDetails.smoking}}</div>
+		</div>
+		<div class="row g_descitem">
+		  <div class="col col-sm-4 col-md-3">Customer Prefrence <span class="visible-xs">:</span></div>
+		  <div class="col col-sm-1 hidden-xs">:</div>
+		  <div class="col-sm-7">
+		  <span class="g-badge {{preferences.isActive}}" ng-repeat="preferences in guideDetails.customerPreference">{{preferences.text}}</span></div>
+
+		</div>
+		<div class="row g_descitem">
+		  <div class="col col-xs-12">
+			{{guideDetails.description}}<a href="#" class="more_lnk">more info</a>
+		  </div>
+		</div>
+	  </div>
+	  <div class="col-sm-3 clearfix">
+		<div class="gaction_box">
+		  <div class="gprice_box">
+			<div class="gprice_h">Pricing<sup>*</sup></div>
+			<div class="gprice_main">{{guideDetails.pricing}}</div>
+		  </div>
+		  <a href="#" class="btn btn-ask btn-block">Ask {{guideDetails.firstName}}</a>
+		  <a href="#" class="btn btn-book btn-block">Book Now</a>
+		</div>
+	  </div>
+	</div>
